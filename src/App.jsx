@@ -1,13 +1,16 @@
 import React from "react";
 import { createRoot } from "react-dom";
-import Pet from "./Recipies";
+import Navbar from "./Navbar";
 
 const App = () => {
+  const mainBackground = {
+    background: "linear-gradient(to bottom, #0F2027, #203A43, #2C5364)",
+    height: "100vh",
+  };
   return (
-    <div>
-      <h1>Food</h1>
-      <Pet name="Luna" animal="dog" breed="Havanese" />
-    </div>
+    <main style={mainBackground}>
+      <Navbar />
+    </main>
   );
 };
 

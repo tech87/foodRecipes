@@ -2,7 +2,14 @@
 module.exports = {
   content: ["./src/**/*.{html,jsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        jakarta: ["Plus Jakarta Sans", "sans-serif"],
+      },
+      colors: {
+        customBorder: "#2C5364",
+      },
+    },
   },
   plugins: [],
 };
