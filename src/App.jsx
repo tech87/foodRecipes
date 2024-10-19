@@ -1,6 +1,7 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import Navbar from "./Navbar";
+import Banner from "./Banner";
 
 const App = () => {
   const mainBackground = {
@@ -10,6 +11,7 @@ const App = () => {
   return (
     <main style={mainBackground}>
       <Navbar />
+      <Banner />
     </main>
   );
 };

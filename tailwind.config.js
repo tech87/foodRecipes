@@ -8,6 +8,7 @@ module.exports = {
       },
       colors: {
         customBorder: "#2C5364",
+        customBg: "linear-gradient(to bottom, #0F2027, #203A43, #2C5364)",
       },
     },
   },
