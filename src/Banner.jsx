@@ -11,12 +11,12 @@ const Banner = () => {
           alt="cupcakes banner picture"
           className="h-full w-full object-cover blur-sm"
         />
-        <div className="absolute inset-0 flex flex-col items-start justify-center px-8 bg-black bg-opacity-50">
-          <h1 className="text-gray-200 text-4xl font-bold px-8">
+        <div className="absolute inset-0 flex flex-col items-start justify-center px-4 bg-black bg-opacity-50">
+          <h1 className="text-gray-200 text-4xl font-bold px-4">
             Explore, cook, and <span className="text-teal-900">enjoy</span> a
             world of flavors from your kitchen.
           </h1>
-          <button className="bg-teal-900 text-white py-2 px-4 ml-8 mt-4 rounded hover:bg-teal-700">
+          <button className="bg-teal-900 text-white py-2 px-4 ml-4 mt-4 rounded hover:bg-teal-700">
             Get Started
           </button>
         </div>
