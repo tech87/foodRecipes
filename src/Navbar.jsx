@@ -53,7 +53,7 @@ const Navbar = () => {
             Home
           </a>
           <a
-            href="#"
+            href="#About"
             className="block text-sky-200 hover:bg-teal-900 px-6 py-2"
           >
             About

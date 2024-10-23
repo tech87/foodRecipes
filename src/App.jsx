@@ -2,16 +2,14 @@ import React from "react";
 import { createRoot } from "react-dom/client";
 import Navbar from "./Navbar";
 import Banner from "./Banner";
+import About from "./About";
 
 const App = () => {
-  const mainBackground = {
-    background: "linear-gradient(to bottom, #0F2027, #203A43, #2C5364)",
-    height: "100vh",
-  };
   return (
-    <main style={mainBackground}>
+    <main className="bg-gradient-to-b from-[#0F2027] via-[#203A43] to-[#2C5364] min-h-screen">
       <Navbar />
       <Banner />
+      <About />
     </main>
   );
 };
