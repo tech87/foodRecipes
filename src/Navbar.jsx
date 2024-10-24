@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Navbar = () => {
+const Navbar = ({ aboutRef }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -17,11 +17,16 @@ const Navbar = () => {
         >
           Home
         </a>
-        <a
-          href="#"
-          className="text-xl text-sky-200 hover:text-slate-300 hover:scale-125"
-        >
-          About
+        <a className="text-xl text-sky-200 hover:text-slate-300 hover:scale-125">
+          <button
+            onClick={() => {
+              aboutRef.current.scrollIntoView({
+                behavior: "smooth",
+              });
+            }}
+          >
+            About
+          </button>
         </a>
         <a
           href="#"
@@ -52,12 +57,16 @@ const Navbar = () => {
           >
             Home
           </a>
-          <a
-            href="#About"
-            className="block text-sky-200 hover:bg-teal-900 px-6 py-2"
+          <button
+            className="block text-sky-200 hover:bg-teal-900 px-6 py-2 w-full text-left"
+            onClick={() => {
+              aboutRef.current.scrollIntoView({
+                behavior: "smooth",
+              });
+            }}
           >
             About
-          </a>
+          </button>
           <a
             href="#"
             className="block text-sky-200 hover:bg-teal-900 px-6 py-2"
